@@ -1372,6 +1372,7 @@ select{
         height:55px;
         font-size:22px;
     }
+
 /*=========================================
         APPOINTMENT SECTION
 =========================================*/
@@ -1424,6 +1425,7 @@ select{
     color:rgba(10,110,189,.06);
 }
 
+
 .appointment-section .container::after{
     content:"+";
     position:absolute;
@@ -1432,6 +1434,46 @@ select{
     font-size:80px;
     font-weight:700;
     color:rgba(0,184,169,.08);
+}
+.hero-image{
+    position:relative;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    height:700px;
+    overflow:visible;
+}
+
+.service-hero-img{
+
+    width:1000px;
+    max-width:none;
+
+    position:absolute;
+
+    right:-180px;
+    bottom:0;
+
+    opacity:.95;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 20px 40px rgba(10,110,189,.18));
+
+    mask-image:linear-gradient(
+        to left,
+        black 70%,
+        rgba(0,0,0,.65) 88%,
+        transparent 100%
+    );
+
+    -webkit-mask-image:linear-gradient(
+        to left,
+        black 70%,
+        rgba(0,0,0,.65) 88%,
+        transparent 100%
+    );
+
 }
 
 /* Enhance form */
